@@ -29,6 +29,6 @@ $((() => {
 
   // ACCORDIAN
 
-  $('#accordian').accordian();
+  $('#accordion').accordion({ collapsible: true, heightStyle: 'content' });
 
 }));

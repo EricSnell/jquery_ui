@@ -95,3 +95,8 @@ ul li:active {
   height: 20px;
   border: dashed 2px #999;
 }
+
+#accordion h2:hover {
+  cursor: pointer;
+  color: #26A69A;
+}
