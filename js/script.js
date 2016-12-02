@@ -4,7 +4,7 @@ $((() => {
 
   $('.box').draggable();
   // Content draggable anywhere; container will scroll with fixed height/width
-  $('#box1').draggable({ scroll: true });
+  $('#box1').draggable({ scroll: true, revert: 'invalid' });
   // Content only draggable vertically
   $('#box2').draggable({ axis: 'x' });
   // Content only draggable horizontally
@@ -13,7 +13,14 @@ $((() => {
   $('#box4').draggable({ containment: '.container' });
 
   // DROPPABLE
-  
+
+  $('#droppable').droppable({
+    // Only accepts box1
+    accept: '#box1',
+    drop: function() {
+      $(this).text('when a box got a attitude, drop it like it\'s hot');
+    }
+  });
 
 
 
