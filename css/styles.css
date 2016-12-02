@@ -33,8 +33,9 @@ h1 {
    color: white;
    line-height: 120px;
    text-align: center;
+   cursor: pointer;
    display: inline-block;
-   margin: 20px;
+   margin: 20px 0 0;
  }
 
 #box1 {
