@@ -31,4 +31,16 @@ $((() => {
 
   $('#accordion').accordion({ collapsible: true, heightStyle: 'content' });
 
+  // DATE PICKER
+
+  $('.date').datepicker({
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    showButtonPanel: true,
+    changeMonth: false,
+    changeYear: false,
+    numberOfMonths: 2,
+    minDate: 0
+  });
+
 }));
