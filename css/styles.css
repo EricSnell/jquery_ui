@@ -18,13 +18,21 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
   border: solid 1px #ccc;
-
-  /* fixed height container
-     with overflow for scrollbar
-  */
- height: 500px;
- overflow: auto;
  }
+
+ .container:after {
+   display: table;
+   content: "";
+   clear: both;
+ }
+
+ .fixed-container {
+     /* fixed height container
+        with overflow for scrollbar
+     */
+    height: 500px;
+    overflow: auto;
+}
 
  .box {
    height: 120px;
@@ -38,21 +46,10 @@ h1 {
    margin: 20px 0 0;
  }
 
-#box1 {
-  background-color: #673AB7;
-}
-
-#box2 {
-  background-color: #00BCD4;
-}
-
-#box3 {
-  background-color: #FFC107;
-}
-
-#box4 {
-  background-color: #E91E63;
-}
+#box1 { background-color: #673AB7; }
+#box2 { background-color: #00BCD4; }
+#box3 { background-color: #FFC107; }
+#box4 { background-color: #E91E63; }
 
 #droppable {
   width: 700px;
@@ -87,5 +84,14 @@ ul li:hover {
 }
 
 ul li:active {
+  transform: rotate(2deg);
+  background: #ccc;
+  border-color: #999;
+  box-shadow: 0 10px -4px #111;
+}
 
+.placeholder-box {
+  background: #81D4FA;
+  height: 20px;
+  border: dashed 2px #999;
 }
