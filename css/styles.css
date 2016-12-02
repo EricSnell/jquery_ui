@@ -1,0 +1,48 @@
+/* styles.css */
+
+body {
+  background: #eee;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+
+  /* fixed height container
+     with overflow for scrollbar
+  */
+ height: 400px;
+ overflow: auto;
+ }
+
+ .box {
+   height: 120px;
+   width: 120px;
+   background: #000;
+   color: white;
+   line-height: 120px;
+   text-align: center;
+   display: inline-block;
+   margin: 20px;
+ }
+
+#box1 {
+  background-color: #673AB7;
+}
+
+#box2 {
+  background-color: #00BCD4;
+}
+
+#box3 {
+  background-color: #FFC107;
+}
+
+#box4 {
+  background-color: #E91E63;
+}
