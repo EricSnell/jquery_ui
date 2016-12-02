@@ -27,6 +27,8 @@ $((() => {
   $('#sortable').sortable({ connectWith: '#sortable-too', placeholder: 'placeholder-box' });
   $('#sortable-too').sortable({ connectWith: '#sortable', placeholder: 'placeholder-box' });
 
+  // ACCORDIAN
 
+  $('#accordian').accordian();
 
 }));
